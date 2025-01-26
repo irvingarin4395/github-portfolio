@@ -1,6 +1,46 @@
 body {
-    background-color: #000;
-    height: auto;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px #000 solid;
+    font-family: "Poppins";
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #ccc solid;
+    color: #000;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #888;
 }
 
 .container {
@@ -14,10 +54,119 @@ body {
     max-width: 1200px;
     width: 100%;
     height: auto;
-    border: #008cff solid 1px;
+    /*border: #008cff solid 1px;
+    border-radius: 20px;*/
+}
+
+h1, h2, h3, p, body {
+    color: #fff;
+    font-family: "Poppins";
+}
+
+p {
+   font-size: 20px; 
+}
+
+.exp_card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.exp_card:hover {
+    .exp_card_front {
+        opacity: 0;
+        transition: transform 0.8s ease-in-out;
+    }
+
+    .exp_card_back {
+        transform: scale(1);
+    }
+    .exp_card_layer {
+        transform: scale(1);
+    }
+}
+
+.exp_card_layer {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    transition: transform 0.8s ease-in-out;
+    transition-delay: 0.1s;
+    transform: scale(0);
+    border: #aaa 1px solid;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.exp_card_front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.exp_card_back {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    transition: transform 0.8s ease-in-out;
+    transform: scale(0);
+    z-index: 6;
+}
+
+.skill_card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ffffff70;
+}
+
+.skill_card:hover {
+    .skill_card_back {
+        transform: scale(1);
+    }
+    .skill_card_layer {
+        transform: scale(1);
+    }
+}
+
+.skill_card_layer {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    transition: transform 0.8s ease-in-out;
+    transition-delay: 0.1s;
+    transform: scale(0);
+    border: #aaa 1px solid;
     border-radius: 20px;
 }
 
-h1, h2, h3, li, p {
-    color: #fff;
+.skill_card_front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
+
+.skill_card_back {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(0);
+    z-index: 6;
+}
+
