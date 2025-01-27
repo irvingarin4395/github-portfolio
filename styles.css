@@ -230,7 +230,7 @@ nav a:hover {
     justify-content: center;
     width: 100%;
     height: 100%;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
 
 .exp_card_back {
@@ -238,7 +238,7 @@ nav a:hover {
     width: 100%;
     height:100%;
     border-radius: 20px;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.6s ease-in-out;
     transform: scale(0);
     z-index: 6;
 }
@@ -246,57 +246,30 @@ nav a:hover {
 #exp_card_back_sapere_bg {
     position: absolute;
     width: 100%;
-    height: 135%;
+    height: 100%;
     background-color: #000;
     opacity: 0.5;
-    @media (max-width: 1120px) {
-        height: 160%;
-    }
-    @media (max-width: 992px) {
-        height: 190%;
-    }
-    @media (max-width: 800px) {
-        height: 230%;
-    }
-    @media (max-width: 768px) {
-        height: 130%;
-    }
-    @media (max-width: 595px) {
-        height: 170%;
-    }
-    @media (max-width: 480px) {
-        height: 200%;
-    }
-    @media (max-width: 430px) {
-        height: 220%;
-    }
-    @media (max-width: 395px) {
-        height: 250%;
-    }
-    @media (max-width: 345px) {
-        height: 300%;
-    }
 }
 
 #skill_height {
     position: relative;
     width: 100%;
-    height: 125vh; 
+    height: 900px; 
     z-index: 4;
     @media (max-width: 1120px) {
-        height: 135vh;
+        height: 1100px;
     }
     @media (max-width: 992px) {
-        height: 150vh;
+        height: 1250px;
     }
     @media (max-width: 790px) {
-        height: 190vh;
+        height: 1650px;
     }
     @media (max-width: 570px) {
-        height: 280vh;
+        height: 2400px;
     }
     @media (max-width: 350px) {
-        height: 600vh;
+        height: 4800px;
     }
 }
 
