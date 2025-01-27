@@ -92,6 +92,9 @@ nav a:hover {
         padding: 5%;
         margin-bottom: 0px;
     }
+    @media (max-width: 380px) {
+        font-size: 14px;
+    }
 }
 
 #summary_content h1{
@@ -137,7 +140,10 @@ nav a:hover {
     @media (max-width: 768px) {
         background-size: 90%;
     }
-    @media (max-width: 480) {
+    @media (max-width: 480px) {
+        background-size: 150%;
+    }
+    @media (max-width: 380px) {
         background-size: 150%;
     }
 }
@@ -149,6 +155,9 @@ nav a:hover {
     z-index: 3;
     @media (max-width: 768px) {
         height: 185vh;
+    }
+    @media (max-width: 480px) {
+        height: 205vh;
     }
 }
 
@@ -258,6 +267,15 @@ nav a:hover {
     @media (max-width: 480px) {
         height: 200%;
     }
+    @media (max-width: 430px) {
+        height: 220%;
+    }
+    @media (max-width: 395px) {
+        height: 250%;
+    }
+    @media (max-width: 345px) {
+        height: 300%;
+    }
 }
 
 #skill_height {
@@ -276,6 +294,9 @@ nav a:hover {
     }
     @media (max-width: 570px) {
         height: 280vh;
+    }
+    @media (max-width: 350px) {
+        height: 550vh;
     }
 }
 
@@ -300,9 +321,10 @@ nav a:hover {
 
 .skill_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 40px;
-    grid-template-rows: 160px
+    grid-template-rows: 150px;
+    justify-items: center;
 }
 
 .skill_card {
@@ -313,6 +335,9 @@ nav a:hover {
     border-radius: 20px;
     overflow: hidden;
     background-color: #ffffff70;
+    @media (max-width: 480px) {
+        width: 150px;
+    }
 }
 
 .skill_card:hover {
