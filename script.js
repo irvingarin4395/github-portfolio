@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $("#contact_close").click(function(){
-        $("#contact_modal").css("display", "none");
+        $("#contact_modal").css("transform", "scale(0)");
     });
     $("#contact_btn").click(function(){
-        $("#contact_modal").css("display", "flex");
+        $("#contact_modal").css("transform", "scale(1)");
     });
     $('.exp_card_front[company="sapere_marketing"]').click(function(){
         $('.exp_card_front[company="sapere_marketing"]').css("opacity", "0");
